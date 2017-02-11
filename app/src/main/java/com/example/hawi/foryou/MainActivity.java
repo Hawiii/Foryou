@@ -9,6 +9,7 @@ import android.net.Network;
 import android.net.NetworkInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -19,6 +20,10 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        saveFile("fileee", "testss", Context.MODE_APPEND);
+//        System.out.print(loadFile("fileee"));
+        Log.d("FileTest", loadFile("fileee"));
 
         Button tochat = (Button) findViewById(R.id.tochat);
         tochat.setOnClickListener(new View.OnClickListener(){
