@@ -21,7 +21,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        saveFile("fileee", "testss", Context.MODE_APPEND);
+        saveFile("fileee", "???", Context.MODE_PRIVATE);
 //        System.out.print(loadFile("fileee"));
         Log.d("FileTest", loadFile("fileee"));
 
